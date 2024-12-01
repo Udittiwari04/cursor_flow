@@ -76,7 +76,7 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css" integrity="sha256-Ce01nkBczUKzTSXmQRec8BWO1RX/JPQuVwxu1QzVjCU=" crossorigin="anonymous">
 
-  <link rel="alternate" href='https://mouse4all.com/index.xml' type="application/rss+xml" title="Mouse4all - Accessibility for all">
+  <link rel="alternate" href='https://mouse4all.com/index.xml' type="application/rss+xml" title="CursorFlow - Accessibility for all">
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
@@ -117,27 +117,27 @@
                         <ul class="dropdown-menu">
                             <li><a href="../mobi-mouse">Mobi Mouse</a></li>
                             <li><a href="../vanni">Vaani</a></li>
-                            <li><a href="../dristi">Dristi</a></li>
+                            <li><a href="../dristi">Dristhi</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/testimonials/">Testimonials</a>
+                        <a href="../dristi">Testimonials</a>
                     </li>
 
                     <button id="startBtn" class="card-button">Start Tracking</button>
         <button id="stopBtn"class="card-button">Stop Tracking</button>
 
+                    <!-- <li class="dropdown">
+                        <a href="/">Articles</a>
+                    </li> -->
+
                     <li class="dropdown">
-                        <a href="/en/articles/">Articles</a>
+                        <a href="#what_whom">About</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/about/">About</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="/en/contact/">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -184,7 +184,7 @@
 <section id="video">
     
     <div id="bgVideo" class="blue-raster" data-property="{
-        videoURL: 'https://youtu.be/tj-HJO1yG_I',
+        videoURL: 'https://youtube/tj-HJO1yG_I',
         mute: true, showControls: false, useOnMobile: false, ratio: 'auto',
         quality: 'default', opacity: 1, containment: 'self', loop: true,
         startAt: 0, stopAt: 0, autoPlay: true, showYTLogo: false, addRaster: true,
@@ -197,7 +197,7 @@
                     <div class="video-info" id="video-layer" >
                         <h1>Dristhi</h1>
                         <h3>Accessibility for Android&trade;</h3>
-                        <h3>Use your tablet or smartphone without touching the screen</h3>
+                        <h3>Use your tablet or smartphone and desktop without touching the screen</h3>
                     </div>
                 </div>
             </div>
@@ -271,13 +271,13 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
                 </div>
             </div>
             <div class="col-md-5 col-sm-12 pad-bb">
-                <img src='images/DristiAbout.png' style="border-radius: 9px ; width: 690px; padding:20px"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
+                <img src="{{ url_for('static', filename='images/DristiAbout.png') }}" style="border-radius: 9px ; width: 690px; padding:20px"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-5 col-sm-12 hidden-sm-xs">
-                <img src='images/bywhomedristhi.jpg' class="img-responsive img-md center-block img-rounded" style="padding: px;" title='Rafael using an Android phone withand a wobble switch'>
+                <img src="{{ url_for('static', filename='images/bywhomedristhi.jpg') }}" class="img-responsive img-md center-block img-rounded" style="padding: px;" title='Rafael using an Android phone withand a wobble switch'>
             </div>
             <div class="col-md-7 col-sm-12 pad-bb pad-t">
                 <h2>For whom?</h2>
@@ -286,7 +286,7 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
 
             </div>
             <div class="col-sm-12 hidden-md hidden-lg">
-                <img src='images/vaani.whom.jpg'class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with Mouse4all and a wobble switch'>
+                <img src="{{ url_for('static', filename='images/vaani.whom.jpg') }}" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with CursorFlow and a wobble switch'>
             </div>
         </div>
     </section>
@@ -306,7 +306,7 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
         <div class="box-simple">
             <div class="icon">
                 
-                <img class="icon" src='images/13.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/13.png') }}">
             </div>
             <h3>Augmented pointer</h3>
             <p>Visual aid with big pointer and intersecting axes to easily identify the position of the pointer.</p>
@@ -320,7 +320,7 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
         <div class="box-simple">
             <div class="icon">
                 
-                <img class="icon" src='images/14.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/14.png') }}">
             </div>
             <h3>Up to two switches</h3>
             <p>Switch control with one or two switches. Compatible with Bluetooth switches and cable switches (3.5 mm connector).</p>
@@ -339,7 +339,7 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
         <div class="box-simple">
             <div class="icon">
                 
-                <img class="icon" src='images/16.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/16.png') }}">
             </div>
             <h3>Customizable</h3>
             <p>Select the menu. Choose the color and size of the pointer. Adjust the timings and scanning speed to your needs.</p>
@@ -353,10 +353,10 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
         <div class="box-simple">
             <div class="icon">
                 
-                <img class="icon" src='images/18.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/18.png') }}">
             </div>
             <h3>Easy to install</h3>
-            <p>You can start using Mouse4all Switch in minutes. Follow the instructions in the quick-start guide included in the app.</p>
+            <p>You can start using CursorFlow Switch in minutes. Follow the instructions in the quick-start guide included in the app.</p>
         </div>
     </div>
 
@@ -365,19 +365,19 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
 <section class="bar background-pentagon no-mb">
     <div class="plans" id="plan">
         <div class="card">
-            <img src="'images/30daydristhi.png' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/30daydristhi.png') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 1</h3>
             <p class="card-text">Description of Plan 1 with great features.</p>
             <button class="card-button" data-modal-target="modal-1">Buy</button>
         </div>
         <div class="card">
-            <img src='images/90daydristhi.png' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/90daydristhi.png') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 2</h3>
             <p class="card-text">Description of Plan 2 with better features.</p>
             <button class="card-button" data-modal-target="modal-2">Buy</button>
         </div>
         <div class="card">
-            <img src='images/365daydristhi.png' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/365daydristhi.png') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 3</h3>
             <p class="card-text">Description of Plan 3 with premium features.</p>
             <button class="card-button" data-modal-target="modal-3">Buy</button>
@@ -567,9 +567,9 @@ Introducing the revolutionary Dristhi Mouse – a cutting-edge solution that let
                 </div>
             </div>
         </div>
-        <h1>Eye-Controlled Mouse</h1>
+        <!-- <h1>Eye-Controlled Mouse</h1>
         
-        <p>Status: <span id="status">Inactive</span></p>
+        <p>Status: <span id="status">Inactive</span></p> -->
         
         <script>
             const socket = io.connect('http://localhost:5000');

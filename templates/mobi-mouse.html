@@ -26,7 +26,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mouse4all - Accessibility for all</title>
+  <title>CursorFlow- Accessibility for all</title>
   <meta name="author" content="">
 
   
@@ -74,7 +74,7 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css" integrity="sha256-Ce01nkBczUKzTSXmQRec8BWO1RX/JPQuVwxu1QzVjCU=" crossorigin="anonymous">
 
-  <link rel="alternate" href='https://mouse4all.com/index.xml' type="application/rss+xml" title="Mouse4all - Accessibility for all">
+  <link rel="alternate" href='https://mouse4all.com/index.xml' type="application/rss+xml" title="CursorFlow - Accessibility for all">
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
@@ -97,7 +97,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src='images/logo.png' alt="logo" class="hidden-sm-xs" style="z-index: 10; height: 100px; margin: -40px -80px;">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="hidden-sm-xs" style="z-index: 10; height: 100px; margin: -40px -80px;">
                     <!-- <img src="/img//logo-mouse4all-sm.png" alt="logo" class="hidden-md-lg"> -->
                     <span class="sr-only"> - go to homepage</span>
                 </a>
@@ -121,21 +121,21 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/testimonials/">Testimonials</a>
+                        <a href="/">Testimonials</a>
                     </li>
 
                    
 
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="/en/articles/">Articles</a>
+                    </li> -->
+
+                    <li class="dropdown">
+                        <a href="#what_whom">About</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/about/">About</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="/en/contact/">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -270,13 +270,13 @@
                 </div>
             </div>
             <div class="col-md-5 col-sm-12 pad-bb">
-                <img src='images/mobi-mouse.jpeg' style="border-radius: 9px ; width: 720px; height: 300px;padding:30px 0"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
+                <img src="{{ url_for('static', filename='images/mobi-mouse.jpeg') }}" style="border-radius: 9px ; width: 720px; height: 300px;padding:30px 0"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-5 col-sm-12 hidden-sm-xs">
-                <img src='images/3.jpg' class="img-responsive img-md center-block img-rounded" style="padding: px;" title='Rafael using an Android phone withand a wobble switch'>
+                <img src="{{ url_for('static', filename='images/3.jpg') }}" class="img-responsive img-md center-block img-rounded" style="padding: px;" title='Rafael using an Android phone withand a wobble switch'>
             </div>
             <div class="col-md-7 col-sm-12 pad-bb pad-t">
                 <h2>For whom?</h2>
@@ -287,7 +287,7 @@
 
             </div>
             <div class="col-sm-12 hidden-md hidden-lg">
-                <img src="" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with Mouse4all and a wobble switch'>
+                <img src="" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with CursorFlow and a wobble switch'>
             </div>
         </div>
     </section>
@@ -345,7 +345,7 @@
         <div class="box-simple">
             <div class="icon">
                 
-                <img class="icon" src='images/13.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/13.png') }}">
             </div>
             <h3>Augmented pointer</h3>
             <p>Visual aid with big pointer and intersecting axes to easily identify the position of the pointer.</p>
@@ -358,7 +358,7 @@
     <div class="col-md-4">
         <div class="box-simple">
             <div class="icon">
-                <img class="icon" src='images/14.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/14.png') }}">
             </div>
             <h3>Up to two switches</h3>
             <p>Switch control with one or two switches. Compatible with Bluetooth switches and cable switches (3.5 mm connector).</p>
@@ -376,7 +376,7 @@
     <div class="col-md-4">
         <div class="box-simple">
             <div class="icon">
-                <img class="icon" src='images/16.png'>
+                <img class="icon" src="{{ url_for('static', filename='images/16.png') }}">
             </div>
             <h3>Customizable</h3>
             <p>Select the menu. Choose the color and size of the pointer. Adjust the timings and scanning speed to your needs.</p>
@@ -389,10 +389,10 @@
     <div class="col-md-4">
         <div class="box-simple">
             <div class="icon">
-                <img class="icon" src='images/18.png'>            </div>
+                <img class="icon" src="{{ url_for('static', filename='images/18.png') }}">            </div>
                 
             <h3>Easy to install</h3>
-            <p>You can start using Mouse4all Switch in minutes. Follow the instructions in the quick-start guide included in the app.</p>
+            <p>You can start using CursorFlow Switch in minutes. Follow the instructions in the quick-start guide included in the app.</p>
         </div>
     </div>
 
@@ -401,19 +401,19 @@
 <section class="bar background-pentagon no-mb">
     <div class="plans" id="plan">
         <div class="card">
-            <img src='images/30DAy mobi.png'alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/30DAy mobi.png') }}"alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 1</h3>
             <p class="card-text">Description of Plan 1 with great features.</p>
             <button class="card-button" data-modal-target="modal-1">Buy</button>
         </div>
         <div class="card">
-            <img src='images/90daymobi.png'alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/90daymobi.png') }}"alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 2</h3>
             <p class="card-text">Description of Plan 2 with better features.</p>
             <button class="card-button" data-modal-target="modal-2">Buy</button>
         </div>
         <div class="card">
-            <img src='images/365daymobi.png' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/365daymobi.png') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Plan 3</h3>
             <p class="card-text">Description of Plan 3 with premium features.</p>
             <button class="card-button" data-modal-target="modal-3">Buy</button>

@@ -26,7 +26,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mouse4all - Accessibility for all</title>
+  <title>CursorFlow - Accessibility for all</title>
   <meta name="author" content="">
 
   
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src='images/logo.png' alt="logo" class="hidden-sm-xs" style="z-index: 10; height: 100px; margin: -40px -80px;">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="hidden-sm-xs" style="z-index: 10; height: 100px; margin: -40px -80px;">
 
 
                     <span class="sr-only"> - go to homepage</span>
@@ -124,20 +124,20 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/testimonials/">Testimonials</a>
+                        <a href="/">Testimonials</a>
                     </li>
 
                    
                     <li class="dropdown">
-                        <a href="/en/articles/">Articles</a>
+                        <a href="/">Articles</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/about/">About</a>
+                        <a href="#what_whom">About</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="/en/contact/">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -195,9 +195,9 @@
             <div class="row" >
                 <div class="col-xs-10 col-xs-offset-1">
                     <div class="video-info" id="video-layer" >
-                        <h1>Curser Flow</h1>
+                        <h1>CursorFlow</h1>
                         <h3>Accessibility for Android&trade;</h3>
-                        <h3>Use your tablet or smartphone without touching the screen</h3>
+                        <h3>Use your tablet or smartphone and Desktop without touching the screen</h3>
                     </div>
                 </div>
             </div>
@@ -269,13 +269,13 @@
                 </div>
             </div>
             <div class="col-md-5 col-sm-12 pad-bb">
-                <img src='images/home.main.jpg' style="border-radius: 9px ; width: 690px;"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
+                <img src="{{ url_for('static', filename='images/home.main.jpg') }}" style="border-radius: 9px ; width: 690px;"  class="img-responsive img-md center-block" title='Diagram: one or two switches, adapter, and Android tablet or smartphone'>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-5 col-sm-12 hidden-sm-xs">
-                <img src="images/home.whom.jpg" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with Mouse4all and a wobble switch'>
+                <img src="{{ url_for('static', filename='images/home.whom.jpg') }}" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with CursorFlow and a wobble switch'>
             </div>
             <div class="col-md-7 col-sm-12 pad-bb pad-t">
                 <h2>For whom?</h2>
@@ -284,7 +284,7 @@
 palsy, spinal cord injury, multiple sclerosis, ALS, Parkinson, neuromuscular disease.</p>
             </div>
             <div class="col-sm-12 hidden-md hidden-lg">
-                <img src="images/whom.jpg" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with Mouse4all and a wobble switch'>
+                <img src="{{ url_for('static', filename='images/whom.jpg') }}" class="img-responsive img-md center-block img-rounded" title='Rafael using an Android phone with CursorFlow and a wobble switch'>
             </div>
         </div>
     </section>
@@ -294,7 +294,7 @@ palsy, spinal cord injury, multiple sclerosis, ALS, Parkinson, neuromuscular dis
 <section class="bar background-pentagon no-mb">
     <div class="plans" id="plan">
         <div class="card">
-            <img src='images/3.jpg'alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Mobi Mouse</h3>
             <p class="card-text">Compact and portable, ideal for on-the-go use.
                 Bluetooth and wireless options reduce cable clutter.
@@ -305,7 +305,7 @@ palsy, spinal cord injury, multiple sclerosis, ALS, Parkinson, neuromuscular dis
                 </div>
         </div>
         <div class="card">
-            <img src='images/2.jpg' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Dristi</h3>
             <p class="card-text">Hands-free navigation, ideal for users with limited mobility.
                 Enhances accessibility for users with physical disabilities.
@@ -316,7 +316,7 @@ palsy, spinal cord injury, multiple sclerosis, ALS, Parkinson, neuromuscular dis
                 </div>
         </div>
         <div class="card">
-            <img src='images/2.jpg' alt="Card Image" class="card-image">
+            <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Card Image" class="card-image">
             <h3 class="card-title">Vanni</h3>
             <p class="card-text">Hands-free control using voice commands.
                 Reduces physical strain from prolonged mouse usage.
