@@ -15,4 +15,3 @@ Flask-SocketIO==5.4.1
 numpy==1.26.4                     # Used for numerical operations, often integrated with OpenCV.  
 jax==0.4.35                       # Hardware-accelerated computation for enhanced performance in processing.  
 jaxlib==0.4.35                    # Backend for JAX computations.  
-              
